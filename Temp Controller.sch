@@ -281,14 +281,10 @@ Text Label 5950 1250 0    50   ~ 0
 SWCLK
 Text Label 5950 1450 0    50   ~ 0
 SWDIO
-Text Label 3000 6600 0    50   ~ 0
+Text Label 3100 6600 0    50   ~ 0
 SWDIO
-Text Label 3000 6700 0    50   ~ 0
+Text Label 3100 6700 0    50   ~ 0
 SWCLK
-Wire Wire Line
-	2900 6700 3200 6700
-Wire Wire Line
-	2900 6600 3200 6600
 $Comp
 L Device:Crystal_Small Y1
 U 1 1 626F166A
@@ -340,12 +336,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 6271A159
-P 2900 2850
-F 0 "J1" H 2980 2892 50  0000 L CNN
-F 1 "Boot" H 2980 2801 50  0000 L CNN
-F 2 "" H 2900 2850 50  0001 C CNN
-F 3 "~" H 2900 2850 50  0001 C CNN
-	1    2900 2850
+P 2700 2800
+F 0 "J1" H 2780 2842 50  0000 L CNN
+F 1 "Boot" H 2780 2751 50  0000 L CNN
+F 2 "" H 2700 2800 50  0001 C CNN
+F 3 "~" H 2700 2800 50  0001 C CNN
+	1    2700 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -360,23 +356,23 @@ Wire Wire Line
 	1500 4350 1350 4350
 Text Label 1350 4350 0    50   ~ 0
 BOOT0
-Text Label 2350 2850 0    50   ~ 0
+Text Label 2150 2800 0    50   ~ 0
 BOOT0
 $Comp
 L power:GND #PWR012
 U 1 1 627360EA
-P 2650 2950
-F 0 "#PWR012" H 2650 2700 50  0001 C CNN
-F 1 "GND" H 2655 2777 50  0000 C CNN
-F 2 "" H 2650 2950 50  0001 C CNN
-F 3 "" H 2650 2950 50  0001 C CNN
-	1    2650 2950
+P 2450 2900
+F 0 "#PWR012" H 2450 2650 50  0001 C CNN
+F 1 "GND" H 2455 2727 50  0000 C CNN
+F 2 "" H 2450 2900 50  0001 C CNN
+F 3 "" H 2450 2900 50  0001 C CNN
+	1    2450 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 2950 2650 2950
+	2500 2900 2450 2900
 Wire Wire Line
-	2650 2750 2650 2700
+	2450 2700 2450 2650
 $Comp
 L Connector_Generic:Conn_01x08 J3
 U 1 1 6275DAF4
@@ -444,33 +440,19 @@ Wire Wire Line
 Connection ~ 2250 7100
 Wire Wire Line
 	2250 7100 2300 7100
-Text Label 1250 5900 0    50   ~ 0
+Text Label 1150 5900 0    50   ~ 0
 LCD_CS
-Wire Wire Line
-	1600 5900 1250 5900
-Text Label 2950 6000 0    50   ~ 0
+Text Label 1150 5800 0    50   ~ 0
 LCD_DIN
-Text Label 2950 5800 0    50   ~ 0
+Text Label 1150 5600 0    50   ~ 0
 LCD_CLK
-Text Label 2950 5900 0    50   ~ 0
+Text Label 3050 5900 0    50   ~ 0
 LCD_BL
-Text Label 2950 6100 0    50   ~ 0
+Text Label 3050 6100 0    50   ~ 0
 LCD_DC
-Text Label 2950 6200 0    50   ~ 0
+Text Label 3050 6200 0    50   ~ 0
 LCD_RST
-Wire Wire Line
-	2900 6200 3250 6200
-Wire Wire Line
-	2900 6100 3250 6100
-Wire Wire Line
-	2900 6000 3250 6000
-Wire Wire Line
-	2900 5900 3250 5900
-Wire Wire Line
-	2900 5800 3250 5800
-Wire Wire Line
-	2900 5700 3250 5700
-Text Label 2950 5700 0    50   ~ 0
+Text Label 3000 5700 0    50   ~ 0
 TEMP_CH
 $Comp
 L Device:R_Small R6
@@ -839,7 +821,7 @@ Connection ~ 2850 1750
 Wire Wire Line
 	2850 1750 3000 1750
 Wire Wire Line
-	2350 2850 2700 2850
+	2150 2800 2500 2800
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 62939ABD
@@ -1046,8 +1028,6 @@ Wire Wire Line
 Wire Wire Line
 	1050 1650 1050 1600
 Connection ~ 1000 1650
-NoConn ~ 1350 1200
-NoConn ~ 1350 1300
 $Comp
 L power:+3V3 #PWR0109
 U 1 1 62C883F4
@@ -1064,16 +1044,16 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0110
 U 1 1 62CB1D58
-P 2650 2700
-F 0 "#PWR0110" H 2650 2550 50  0001 C CNN
-F 1 "+3V3" H 2665 2873 50  0000 C CNN
-F 2 "" H 2650 2700 50  0001 C CNN
-F 3 "" H 2650 2700 50  0001 C CNN
-	1    2650 2700
+P 2450 2650
+F 0 "#PWR0110" H 2450 2500 50  0001 C CNN
+F 1 "+3V3" H 2465 2823 50  0000 C CNN
+F 2 "" H 2450 2650 50  0001 C CNN
+F 3 "" H 2450 2650 50  0001 C CNN
+	1    2450 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 2750 2700 2750
+	2450 2700 2500 2700
 Connection ~ 1150 2950
 Wire Wire Line
 	1150 2950 1400 2950
@@ -1135,13 +1115,9 @@ F 3 "~" H 4150 4300 50  0001 C CNN
 	1    4150 4300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2900 5400 3250 5400
-Text Label 2950 5400 0    50   ~ 0
+Text Label 3050 5400 0    50   ~ 0
 TEMP_2
-Wire Wire Line
-	2900 5300 3250 5300
-Text Label 2950 5300 0    50   ~ 0
+Text Label 3050 5300 0    50   ~ 0
 TEMP_1
 Wire Wire Line
 	4450 4300 4250 4300
@@ -1188,28 +1164,134 @@ F 3 "~" H 4950 5550 50  0001 C CNN
 	1    4950 5550
 	-1   0    0    1   
 $EndComp
-NoConn ~ 1600 4900
-NoConn ~ 1600 5000
-NoConn ~ 1600 5100
-NoConn ~ 1600 5300
-NoConn ~ 1600 5400
+Text Label 2950 5500 0    50   ~ 0
+USART2_TX
+Text Label 2950 5600 0    50   ~ 0
+USART2_RX
+Wire Wire Line
+	2900 5600 3350 5600
+Wire Wire Line
+	2900 5500 3350 5500
+Wire Wire Line
+	2900 5400 3350 5400
+Wire Wire Line
+	2900 5300 3350 5300
+Wire Wire Line
+	2900 5700 3350 5700
+Wire Wire Line
+	1150 5600 1600 5600
+Wire Wire Line
+	2900 5900 3350 5900
+Wire Wire Line
+	2900 6100 3350 6100
+Wire Wire Line
+	2900 6200 3350 6200
+Wire Wire Line
+	2900 6600 3350 6600
+Wire Wire Line
+	2900 6700 3350 6700
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 631670E7
+P 9300 1500
+F 0 "J9" H 9218 1175 50  0000 C CNN
+F 1 "USART2" H 9218 1266 50  0000 C CNN
+F 2 "" H 9300 1500 50  0001 C CNN
+F 3 "~" H 9300 1500 50  0001 C CNN
+	1    9300 1500
+	-1   0    0    1   
+$EndComp
+Text Label 9550 1400 0    50   ~ 0
+USART2_TX
+Text Label 9550 1500 0    50   ~ 0
+USART2_RX
+Wire Wire Line
+	9500 1500 9950 1500
+Wire Wire Line
+	9500 1400 9950 1400
+NoConn ~ 2900 5800
+Wire Wire Line
+	1150 5800 1600 5800
+Wire Wire Line
+	2900 6000 3350 6000
+Text Label 3100 6000 0    50   ~ 0
+LED_R
+Wire Wire Line
+	1150 5300 1600 5300
+Wire Wire Line
+	1150 5400 1600 5400
+Text Label 1150 5300 0    50   ~ 0
+LED_G
+Text Label 1150 5400 0    50   ~ 0
+LED_B
+Wire Wire Line
+	1150 5900 1600 5900
 NoConn ~ 1600 5500
-NoConn ~ 1600 5600
-NoConn ~ 1600 5700
-NoConn ~ 1600 5800
-NoConn ~ 1600 6000
-NoConn ~ 1600 6100
-NoConn ~ 1600 6200
 NoConn ~ 1600 6300
 NoConn ~ 1600 6400
 NoConn ~ 1600 6500
 NoConn ~ 1600 6600
 NoConn ~ 1600 6700
 NoConn ~ 1600 6800
-NoConn ~ 2900 6800
-NoConn ~ 2900 6500
-NoConn ~ 2900 6400
 NoConn ~ 2900 6300
-NoConn ~ 2900 5600
-NoConn ~ 2900 5500
+Text Label 1350 1200 0    50   ~ 0
+USB_DP
+Text Label 1350 1300 0    50   ~ 0
+USB_DM
+Wire Wire Line
+	1350 1300 1650 1300
+Wire Wire Line
+	1350 1200 1650 1200
+Text Label 3050 6500 0    50   ~ 0
+USB_DP
+Text Label 3050 6400 0    50   ~ 0
+USB_DM
+Wire Wire Line
+	2900 6400 3350 6400
+Wire Wire Line
+	2900 6500 3350 6500
+NoConn ~ 2900 6800
+NoConn ~ 1600 5700
+NoConn ~ 1600 6000
+NoConn ~ 1600 6100
+NoConn ~ 1600 6200
+$Comp
+L LED:ASMB-MTB0-0A3A2 D4
+U 1 1 633BC01E
+P 6600 3000
+F 0 "D4" H 6600 2483 50  0000 C CNN
+F 1 "LED_STBY" H 6600 2574 50  0000 C CNN
+F 2 "LED_SMD:LED_Avago_PLCC4_3.2x2.8mm_CW" H 6600 3500 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-4186EN" H 6600 2550 50  0001 C CNN
+	1    6600 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR01
+U 1 1 633C2CEE
+P 6350 3000
+F 0 "#PWR01" H 6350 2850 50  0001 C CNN
+F 1 "+3V3" H 6365 3173 50  0000 C CNN
+F 2 "" H 6350 3000 50  0001 C CNN
+F 3 "" H 6350 3000 50  0001 C CNN
+	1    6350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3000 6350 3000
+Text Label 6950 3000 0    50   ~ 0
+LED_G
+Text Label 6950 2800 0    50   ~ 0
+LED_B
+Text Label 6950 3200 0    50   ~ 0
+LED_R
+Wire Wire Line
+	6800 2800 7200 2800
+Wire Wire Line
+	6800 3000 7200 3000
+Wire Wire Line
+	6800 3200 7200 3200
+NoConn ~ 1600 4900
+NoConn ~ 1600 5000
+NoConn ~ 1600 5100
 $EndSCHEMATC
